@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: 'Segoe UI', sans-serif;
+            background: #111827;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-box {
+            width: 430px;
+            background: #1f2937;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            color: white;
+        }
+
+        .banner {
+            height: 140px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4, #a855f7);
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #1f2937;
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            object-fit: cover;
+        }
+
+        h2 {
+            margin-top: 70px;
+            text-align: center;
+            font-size: 26px;
+        }
+
+        p {
+            text-align: center;
+            color: #cbd5e1;
+            margin-top: -10px;
+        }
+
+        .section {
+            background: #111827;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 18px;
+            border: 1px solid #1e293b;
+        }
+
+        .section strong {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            color: #e2e8f0;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            background: #3b82f6;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #60a5fa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-box">
+
+        <div class="banner"></div>
+        <img class="avatar" src="jim.jpeg" alt="profile">
+
+        <h2>Jimuel Malingue</h2>
+        <p>Bestlink of the Philippines • Student</p>
+
+        <div class="section">
+            <strong>About Me</strong>
+            <span>I’m passionate about web development, design, and creating modern website layouts. I enjoy learning
+                new tools and improving my skills.</span>
+        </div>
+
+        <div class="section">
+            <strong>Skills</strong>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Basic JavaScript</li>
+                <li>UI Layout Design</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <strong>Contact</strong>
+            <span>Email: jimuelmalingue16@gmail.com</span><br>
+            <span>Phone: 0921-386-3914</span>
+        </div>
+
+        <a class="btn" href="#">View Portfolio</a>
+
+    </div>
+</body>
+
+</html>
